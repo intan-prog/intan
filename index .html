@@ -1,0 +1,218 @@
+<!DOCTYPE html>.
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanspace - Coffee Shop. Hangout space.Purwokerto</title>
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      var t = localStorage.getItem("tema");
+      if (t) document.documentElement.setAttribute("data-tema", t);
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="modern .css">
+  <script src="modern.js" defer></script>
+  <script src="pesan.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#beranda" class="brand" aria-label="Tanspace">
+  <svg class="brand-ikon" viewBox="10 16 88 88" width="40" height="40" aria-hidden="true">
+    <rect class="ikon-latar" x="10" y="16" width="88" height="88" rx="26" />
+    <path class="ikon-uap" d="M54 40 C48 34 60 30 54 24" />
+    <path class="ikon-uap" d="M68 40 C62 34 74 30 68 24" />
+    <path d="M34 50 H76 V64 C76 76 68 84 55 84 C42 84 34 76 34 64 Z" fill="#f5e9da" />
+    <path d="M76 55 H80 C88 55 88 73 78 73" fill="none" stroke="#f5e9da" stroke-width="5" stroke-linecap="round" />
+  </svg>
+  <span class="brand-teks"><b>Tanspace</b> <em></em></span>
+</a>
+    <div class="menu" id="menu">
+      <a href="#tentang">Tentang</a>
+      <a href="#produk">Menu</a>
+      <a href="#pesan">Pesan</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <div class="nav-aksi">
+      <button type="button" class="tema-btn" id="tema" aria-label="Ganti mode gelap atau terang">Gelap</button>
+      <button type="button" class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="beranda">
+    <div class="beans" aria-hidden="true">
+      <span style="--x:8%;  --s:26px; --d:14s; --delay:0s"></span>
+      <span style="--x:22%; --s:18px; --d:11s; --delay:2s"></span>
+      <span style="--x:38%; --s:30px; --d:16s; --delay:5s"></span>
+      <span style="--x:55%; --s:20px; --d:12s; --delay:1s"></span>
+      <span style="--x:70%; --s:28px; --d:15s; --delay:4s"></span>
+      <span style="--x:84%; --s:22px; --d:13s; --delay:7s"></span>
+      <span style="--x:93%; --s:16px; --d:10s; --delay:3s"></span>
+    </div>
+
+    <div class="hero-isi">
+      <div class="cangkir" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="120" height="120">
+          <path class="uap u1" d="M40 40 C32 30, 48 22, 40 10" />
+          <path class="uap u2" d="M60 40 C52 30, 68 22, 60 10" />
+          <path class="uap u3" d="M80 40 C72 30, 88 22, 80 10" />
+          <path d="M25 48 H95 V72 C95 92 80 104 60 104 C40 104 25 92 25 72 Z" fill="#fff" />
+          <path d="M95 55 H104 C112 55 112 80 98 80" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" />
+          <ellipse cx="60" cy="48" rx="35" ry="6" fill="#c98b52" />
+        </svg>
+      </div>
+      <span class="lencana">Sejak 2023 &middot; </span>
+      <h1>Tanspace</h1>
+      <p class="tagline">menyeduh asa di setiap cangkir</p>
+      <div class="hero-tombol">
+        <a href="#produk" class="btn btn-terang">Lihat Menu</a>
+        <a href="#pesan" class="btn btn-garis">Pesan Sekarang</a>
+      </div>
+    </div>
+
+    <svg class="gelombang" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,40 L1440,80 L0,80 Z" />
+    </svg>
+  </header>
+
+  <main>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="reveal">
+      <h2>Tentang Kami</h2>
+      <div class="grid-2">
+        <div>
+          <p>Tanspace merupakan tempat menikmati coffe dengan suasana yang nyaman dan santai, cocok untuk berkumpul dengan teman, mengerjakan tugas, maupun sekadar melepas penat. Dengan beragam pilihan minuman dan suasana yang menarik, Tanspace Purwokerto menjadi tempat pilihan untuk nongkrong. <strong>Berdiri sejak 2023.</strong></p>
+        </div>
+        <div class="foto">
+          <img src="Image/anomalicoffee.webp" alt="Intan Coffe">
+        </div>
+      </div>
+
+      <h3>Mengapa Memilih Kami?</h3>
+      <div class="kartu-wrap">
+        <div class="kartu"><span class="ikon">01</span><p>Coffe lokal Banyumas</p></div>
+        <div class="kartu"><span class="ikon">02</span><p>Tempat ngopi yang nyaman dan cozy</p></div>
+        <div class="kartu"><span class="ikon">03</span><p>Harga affordable</p></div>
+      </div>
+
+      <h3>Cara Pemesanan</h3>
+      <ol class="langkah">
+        <li>Pilih menu di bagian Menu, lalu tekan tombol Tambah pada ukuran atau varian yang diinginkan.</li>
+        <li>Buka bagian Pesan, cek isi keranjang, dan atur jumlahnya.</li>
+        <li>Isi nama dan nomor WhatsApp, lalu pilih ambil di tempat atau diantar (isi alamat jika diantar).</li>
+        <li>Tekan tombol Kirim Pesanan lewat WhatsApp. Rincian pesanan dan total otomatis terisi di chat.</li>
+        <li>Tunggu konfirmasi dari kami (ketersediaan menu dan ongkir jika diantar), lalu lakukan pembayaran sesuai arahan.</li>
+        <li>Pesanan disiapkan, lalu diambil atau diantar ke alamat kamu.</li>
+      </ol>
+    </section>
+
+    <!-- MENU -->
+    <section id="produk" class="reveal">
+      <h2>Menu dan Harga</h2>
+
+      <p class="intro-menu">Pilih minuman atau makanan favoritmu, tekan Tambah, lalu lanjut ke bagian Pesan untuk mengirim pesanan.</p>
+
+      <div class="filter" id="filter-menu">
+        <button type="button" class="filter-btn aktif" data-kat="semua">Semua</button>
+        <button type="button" class="filter-btn" data-kat="kopi">Kopi</button>
+        <button type="button" class="filter-btn" data-kat="nonkopi">Non-Kopi</button>
+        <button type="button" class="filter-btn" data-kat="makanan">Makanan</button>
+      </div>
+
+      <div class="menu-grid" id="daftar-menu"></div>
+
+      <!-- Tempat video YouTube: tempel kode iframe dari YouTube di sini -->
+    </section>
+
+    <!-- PESAN -->
+    <section id="pesan" class="reveal">
+      <h2>Pesan Sekarang</h2>
+      <div class="grid-2 pesan-grid">
+
+        <div class="panel">
+          <h3>Keranjang Pesanan</h3>
+          <ul class="isi-keranjang" id="isi-keranjang"></ul>
+          <div class="total-baris">
+            <span>Total</span>
+            <strong id="total">Rp0</strong>
+          </div>
+        </div>
+
+        <form id="form-pesan" class="panel" novalidate>
+          <h3>Data Pemesan</h3>
+
+          <label for="p-nama">Nama</label>
+          <input type="text" id="p-nama" required>
+
+          <label for="p-wa">Nomor WhatsApp</label>
+          <input type="tel" id="p-wa" placeholder="0812..." required>
+
+          <span class="label-teks">Cara menerima pesanan</span>
+          <div class="pilihan">
+            <label><input type="radio" name="metode" value="Ambil di tempat" checked> Ambil di tempat</label>
+            <label><input type="radio" name="metode" value="Diantar"> Diantar</label>
+          </div>
+
+          <div id="kotak-alamat" class="sembunyi">
+            <label for="p-alamat">Alamat pengantaran</label>
+            <textarea id="p-alamat" rows="3"></textarea>
+          </div>
+
+          <label for="p-catatan">Catatan (opsional)</label>
+          <textarea id="p-catatan" rows="2" placeholder="Contoh: gula sedikit, es dipisah"></textarea>
+
+          <p class="galat" id="galat" role="alert"></p>
+          <button type="submit" class="tombol-kirim">Kirim Pesanan lewat WhatsApp</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="reveal">
+      <h2>Hubungi Kami</h2>
+      <div class="grid-2">
+        <div>
+          <p class="alamat">Alamat:<br>Jl. Raya Watumas No. 10<br>Banyumas, Jawa Tengah</p>
+          <p>
+            <a class="tombol-wa" href="https://wa.me/628898326?text=Halo%20Intan%20Coffe,%20saya%20mau%20bertanya" target="_blank" rel="noopener">Chat via WhatsApp</a>
+          </p>
+          <!-- Tempat peta: tempel kode iframe dari Google Maps di sini -->
+        </div>
+
+        <form id="form-kontak" class="panel" action="#" method="post">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required>
+
+          <label for="wa">WhatsApp</label>
+          <input type="tel" id="wa" name="wa" placeholder="0812..." required>
+
+          <label for="pesan-kontak">Pesan</label>
+          <textarea id="pesan-kontak" name="pesan" rows="4"></textarea>
+
+          <button type="submit" class="tombol-kirim">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TOMBOL KERANJANG MELAYANG -->
+  <a href="#pesan" class="fab sembunyi" id="fab">Keranjang <span id="badge">0</span></a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Intan Cafe. Jl. Raya Watumas No. 10, Banyumas.</p>
+  </footer>
+
+</body>
+</html>
